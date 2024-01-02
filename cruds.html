@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="cruds.css">
+</head>
+<body>
+    
+  <div class="container">
+    <div class="header">
+       <h2>crud</h2>
+       <p>product management system</p>
+    </div>
+    <div class="input">
+        <input type="text" id="title" name="title" placeholder="title">
+        <div class="total">
+            <input onkeyup="getTotal()" type="number" name="price" id="price" placeholder="price">
+            <input onkeyup="getTotal()"  type="number" name="taxes" id="taxes" placeholder="taxes">
+            <input onkeyup="getTotal()"  type="number" name="ads" id="ads" placeholder="ads">
+            <input onkeyup="getTotal()"  type="number" name="discount" id="discount" placeholder="discount">
+            <small id="total"></small>
+        </div>
+        <input type="number" name="count" id="count" placeholder="count">
+        <input type="text" name="category" id="category" placeholder="category">
+        <button  id="create">create</button>
+    </div>
+    <div class="output">
+        <input onkeyup="search()" type="text" name="search" id="search" placeholder="search">
+        <!-- <div class="button-search">
+            <button style="text-align: center; width: 100%;" id="searchByTitle">searchByTitle</button>
+            
+        </div> -->
+        <div id="deleteAll"></div>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+
+            <tbody id="tableBody">
+            
+            </tbody>
+        </table>
+    </div>
+  </div>
+
+
+    <script src="cruds.js"></script>
+</body>
+</html>

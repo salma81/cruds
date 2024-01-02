@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+body{
+    background-color: #F7ECDE;
+}
+h1{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    margin: 13px 0 8px;
+    padding: 8px 0;
+    font-weight: 500;
+    color: #352E28;
+    border-bottom: 2px dotted black;
+    padding-bottom: 40px;
+    position: relative;
+    font-size: 40px;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    width: 18%;
+    height: 20%;
+    left: 490px;
+    bottom: 45px;
+    background-color: #fec260;
+     z-index: -1;
+}
+h1::selection{
+    background-color: #fec260;
+}
+.header p{
+    text-align: center;
+    margin-top: 35px;
+    font-size: 25px;
+    font-family: 'Righteous', sans-serif;
+    color: #3ca55c;
+  
+}
+.input{
+    margin-top: 40px;
+    border-bottom: 2px dotted black;
+   
+    
+}
+.input input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 5px;
+    border-radius: 8px;
+    margin: 10px 5px;
+}
+.input input::placeholder{
+    color: #73716fd8;
+    font-weight: bolder;
+    word-spacing: 1.1px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.input p{
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+    word-spacing: 1px;
+}
+.input input:focus{
+    box-shadow: 2px 2px 2px 2px #fec260;
+    border: 1px solid #f2ab39;
+}
+.input button{
+   position: relative;
+   top: 50%;
+   left: 50%;
+   
+   color: white;
+   background-color: #d1512d;
+   padding: 8px 36px;
+   border-radius: 6px;
+   border: #d1512d;
+   font-size: 18px;
+   margin-top: 12px;
+   margin-bottom: 30px;
+   
+}
+.input button:hover{
+    background-color: #bb4120;
+    cursor: pointer;
+}
+table{
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+}
+table thead tr {
+    background-color: white;
+    height: 40px;
+}
+table thead tr th::selection{
+    background-color: #f2ab39;
+}
+button{
+    color: white;
+    background-color: #d1512d;
+    padding: 8px 36px;
+    border-radius: 6px;
+    border: #d1512d;
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
